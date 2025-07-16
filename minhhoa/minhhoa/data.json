@@ -1,0 +1,28 @@
+[
+    {
+      "task": "Go to gym",
+      "priority": "High",
+      "status": "To Do"
+    },
+    {
+      "task": "Complete project report",
+      "priority": "Medium",
+      "status": "In Progress"
+    },
+    {
+      "task": "Prepare presentation",
+      "priority": "Low",
+      "status": "Done"
+    },
+    {
+      "task": "Review code",
+      "priority": "High",
+      "status": "To Do"
+    },
+    {
+      "task": "Attend meeting",
+      "priority": "Medium",
+      "status": "In Progress"
+    }
+]
+  

@@ -1,0 +1,140 @@
+.hop {
+  line-height: 40px;
+}
+
+.sdt input[type="tel"],
+.sdt input[type="password"] {
+  width: 99%;
+  padding: 5px 0 5px 10px;
+}
+
+.hoten input[type="text"] {
+  padding: 5px 2px 5px 10px;
+  width: 49%;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+  font-size: 12px;
+}
+
+.paragraph p {
+  color: #777;
+}
+
+.paragraph {
+  font-size: 13px;
+  padding-right: 100px;
+  padding-bottom: 10px;
+}
+
+body {
+  font-size: 20px;
+}
+
+.form {
+  background-color: rgb(228, 221, 232);
+  padding-left: 10px;
+  height: 450px;
+  width: 450px;
+}
+
+.birthday {
+  padding-top: 10px;
+}
+
+select {
+  padding: 5px;
+}
+
+.date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 0 12px 0;
+}
+
+#month {
+  width: 120px;
+}
+
+.birthday a {
+  padding: 0 15px 0 12px;
+}
+
+#day,
+#year {
+  width: 100px;
+}
+
+.gender {
+  font-size: 12px;
+  display: flex;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  gap: 20px;
+}
+
+.sign_up button {
+  color: white;
+  background-color: green;
+  border-radius: 5px;
+  border: 1px solid black;
+  padding: 5px 20px;
+  width: 200px;
+  height: 40px;
+  margin-top: 5px;
+}
+
+.login button {
+  color: white;
+  background-color: rgb(79, 79, 169);
+  width: 100px;
+  padding: 0 5px;
+}
+
+.khoi {
+  display: flex;
+  width: 450px;
+  position: relative;
+}
+.form_1 {
+  font-size: 13px;
+  background-color: rgb(79, 79, 169);
+  color: white;
+  width: 450px;
+  padding: 5px 0 0 10px;
+  height: 70px;
+  line-height: 20px;
+}
+
+.password a {
+  display: block;
+  color: rgb(228, 221, 232);
+}
+
+.password {
+  padding-right: 140px;
+}
+
+.email_tel input[type="tel"],
+.password input[type="password"] {
+  width: 140px;
+}
+
+.login {
+  position: absolute;
+  top: 20px;
+  left: 330px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  margin: 10px;
+}

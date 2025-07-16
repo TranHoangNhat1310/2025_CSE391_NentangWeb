@@ -1,0 +1,23 @@
+#h1{
+    text-align: center;
+    color:brown 
+}
+table tr,th,td{
+    border-collapse:collapse;
+    border-color:#CC0000;
+    width: 100%;
+}
+.bang {
+    display: flex; /* Sử dụng flexbox để căn chỉnh các bảng */
+}
+.bang {
+    flex: ; /* Các bảng sẽ mở rộng để chiếm hết không gian còn trống */
+    border-collapse: collapse; /* Loại bỏ khoảng trống giữa các ô */
+    margin-right: 100px; /* Tạo khoảng trống giữa các bảng */
+}
+.table-container table th,
+        .table-container table td {
+            padding: 8px;
+            border: 1px solid #dddddd;
+            text-align: left;
+        }html

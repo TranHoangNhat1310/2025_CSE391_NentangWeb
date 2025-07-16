@@ -1,0 +1,280 @@
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+}
+.loader-3{
+    border: 3px solid rgba(0, 0, 0, 0.1);
+    border-right: 3px solid #6a5a96;
+    border-bottom-color: #6a5a96;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    width: 20px;
+    height: 20px;
+}
+
+.loader-1 {
+    border: 3px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    width: 20px;
+    /* Độ rộng */
+    height: 20px;
+    /* Chiều cao */
+}
+
+.loader-2 {
+    border: 3px solid #6a5a96;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    width: 20px;
+    /* Độ rộng */
+    height: 20px;
+    /* Chiều cao */
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.main-content{
+    width: 1000px;
+    margin: 0 auto;
+    background-color: #f1f2f6;
+    padding-bottom: 50px;
+}
+
+.task .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task{
+    width: 900px;
+    margin: 0 auto;
+}
+
+.task .header h1{
+    font-weight: bold;
+}
+
+.task .header button{
+    height: 35px;
+    width: 140px;
+    border-radius: 10px;
+    border: none;
+    font-size: 17px;
+    background-color: #6f41f8;
+    color: #fff;
+}
+
+.task .header button:hover{
+    box-shadow: 0 0 15px #619be7;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.List{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 20px;
+}
+
+.fa-trash-can{
+    color: red;
+    margin-left: 15px;
+}
+
+.fas{
+    cursor: pointer;
+    font-size: 20px;
+}
+.List p{
+    margin: 10px 0 0 0;
+    font-size: 18px;
+}
+
+small{
+    color:#939395;
+    font-size: 15px;
+}
+
+.item{
+    width: 30%;
+}
+
+.item1, .item2, .item3, .item4{
+    width: 15%;
+}
+
+.item4{
+    text-align: center;
+}
+
+
+.item4 p{
+    margin: 0;
+    font-size: 15px;
+    background-color: #eceef0;
+    display: inline-block;
+    padding: 7px 15px;
+    border-radius: 10px;
+    color: #80858b;
+    font-weight: bold;
+}
+
+
+.item1 p{
+    color: #e14465;
+    font-weight: bold;
+}
+.item2 p{
+    color: #73b783;
+    font-weight: bold;
+}
+.item3 p{
+    color: #e6c77c;
+    font-weight: bold;
+}
+
+/* ============= */
+/* Hiển thị trang phụ */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Màu nền với độ mờ */
+  z-index: 9999; /* Đảm bảo nó hiển thị trên cùng */
+}
+
+/* Nội dung của trang phụ */
+.modal-content {
+  background-color: white;
+  width: 50%;
+  border-radius: 10px;
+  position: absolute;
+  padding: 20px 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-content .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 20px 0;
+}
+
+.modal-content .header h2{
+    margin: 0;
+}
+
+.modal-content input{
+    height: 35px;
+    width: 700px;
+    padding-left: 10px;
+    border-radius: 10px;
+    border: 1px solid #80858b;
+    font-size: 17px;
+    margin: 10px 0;
+}
+
+.modal-content #inputField:focus{
+    outline: 2px solid #FEBF00;
+    outline-offset: 2px;
+    transition: .2s;
+    border: none;
+}
+
+.modal-content small{
+    font-weight: bold;
+}
+
+.modal-content .button{
+    background-color: #4b4848;
+    border: 1px solid #80858b;
+    width: 90px;
+    height: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.modal-content .button1{
+    color: #e14465;
+    border-color: #e14465;;
+}
+.modal-content .button2{
+    color: #e6c77c;
+    border-color: #e6c77c;;
+}
+.modal-content .button3{
+    color: #73b783;
+    border-color: #73b783;;
+}
+
+.modal-content .button1:hover{
+    background-color: #e14465;
+    color: #fff;
+    box-shadow: 0 0 10px #e14465;
+    transition: 0.5s;
+}
+.modal-content .button2:hover{
+    background-color: #e6c77c;
+    color: #fff;
+    box-shadow: 0 0 10px #e6c77c;
+    transition: 0.5s;
+}
+.modal-content .button3:hover{
+    background-color: #73b783;
+    color: #fff;
+    box-shadow: 0 0 10px #73b783;
+    transition: 0.5s;
+}
+
+.modal-content .button1:focus{
+    background-color: #e14465;
+    color: #fff;
+}
+.modal-content .button2:focus{
+    background-color: #e6c77c;
+    color: #fff;
+}
+.modal-content .button3:focus{
+    background-color: #73b783;
+    color: #fff;
+}
+
+/* Nút đóng */
+.modal-content .add{
+    display: flex;
+    justify-content: end;
+}
+
+.modal-content button{
+    height: 35px;
+    width: 65px;
+    border-radius: 10px;
+    border: none;
+    background-color: #7d8592;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
