@@ -1,0 +1,79 @@
+body {
+    background: #f5f7fa;
+    font-family: 'Segoe UI', 'Varela Round', sans-serif;
+    color: #333;
+}
+.container-flex {
+    margin-top: 40px;
+}
+.form-section {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 32px 24px;
+    max-width: 350px;
+}
+.form-section h4 {
+    margin-bottom: 24px;
+    color: #435d7d;
+    font-weight: 600;
+}
+.form-group label {
+    font-weight: 500;
+    color: #435d7d;
+}
+.form-control {
+    border-radius: 6px;
+    border: 1px solid #dbe2ef;
+    box-shadow: none;
+    transition: border-color 0.2s;
+}
+.form-control:focus {
+    border-color: #3f72af;
+    box-shadow: 0 0 0 2px #e3f0fc;
+}
+.btn-success {
+    background: linear-gradient(90deg, #3f72af 0%, #2196F3 100%);
+    border: none;
+    border-radius: 6px;
+    font-weight: 500;
+    padding: 8px 24px;
+    box-shadow: 0 2px 6px rgba(63,114,175,0.08);
+    transition: background 0.2s, box-shadow 0.2s;
+}
+.btn-success:hover {
+    background: linear-gradient(90deg, #2196F3 0%, #3f72af 100%);
+    box-shadow: 0 4px 12px rgba(63,114,175,0.15);
+}
+.table-section {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 32px 50px;
+}
+.table-section h4 {
+    margin-bottom: 24px;
+    color: #435d7d;
+    font-weight: 600;
+}
+table {
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fff;
+}
+thead th {
+    background: #3f72af;
+    color: #fff;
+    font-weight: 500;
+    border: none;
+}
+tbody tr {
+    transition: background 0.2s;
+}
+tbody tr:hover {
+    background: #e3f0fc;
+}
+td, th {
+    padding: 12px 16px !important;
+    border: none;
+}
