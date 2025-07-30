@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Quản lý giao dịch</title>
+    <link rel="stylesheet" href="bai2.css">
+</head>
+<body>
+    <div class="header">
+        <div class="left">Trường Đại học Thủy lợi</div>
+        <div class="right">
+            <a href="#" class="menu">Trang chủ</a>
+            <a href="#" class="menu">Quản lý khách hàng</a>
+            <input type="text" placeholder="Nhập nội dung tìm kiếm">
+            <button>TÌM KIẾM</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="actions">
+            <button id="btnAdd"><span style="font-weight:bold;font-size:18px;">&#43;</span> THÊM</button>
+            <button class="export">⭳ XUẤT RA FILE</button>
+            <select>
+                <option>Kết quả</option>
+                <option>5</option>
+                <option>10</option>
+                <option>20</option>
+            </select>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Hành động</th>
+                    <th>ID</th>
+                    <th>Khách hàng</th>
+                    <th>Nhân viên</th>
+                    <th>Số tiền</th>
+                    <th>Ngày mua</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="table-actions">
+                        <button class="view" title="Xem"><span style="font-weight:bold;">👁</span></button>
+                        <button class="edit" title="Sửa">✎</button>
+                        <button class="delete" title="Xóa">✖</button>
+                        
+                        
+                    </td>
+                    <td>1102</td>
+                    <td>Võ Hoài An</td>
+                    <td>Mai Thục Anh</td>
+                    <td>250 000</td>
+                    <td>06 Tháng 6 2024 9:00</td>
+                </tr>
+                <tr>
+                    <td class="table-actions">
+                        <button class="view" title="Xem"><span style="font-weight:bold;">👁</span></button>
+                        <button class="edit" title="Sửa">✎</button>
+                        <button class="delete" title="Xóa">✖</button>
+                    </td>
+                    <td>1199</td>
+                    <td>Hoàng Thị Thắng</td>
+                    <td>Nguyễn Văn Hồng</td>
+                    <td>600 000</td>
+                    <td>06 Tháng 6 2024 9:03</td>
+                </tr>
+                <tr>
+                    <td class="table-actions">
+                        <button class="view" title="Xem"><span style="font-weight:bold;">👁</span></button>
+                        <button class="edit" title="Sửa">✎</button>
+                        <button class="delete" title="Xóa">✖</button>
+                    </td>
+                    <td>1239</td>
+                    <td>Nguyễn Huy Quang</td>
+                    <td>Nguyễn Văn Hồng</td>
+                    <td>934 000</td>
+                    <td>06 Tháng 6 2024 9:10</td>
+                </tr>
+                <tr>
+                    <td class="table-actions">
+                        <button class="view" title="Xem"><span style="font-weight:bold;">👁</span></button>
+                        <button class="edit" title="Sửa">✎</button>
+                        <button class="delete" title="Xóa">✖</button>
+                    </td>
+                    <td>1677</td>
+                    <td>Huỳnh Văn Nam</td>
+                    <td>Mai Thục Anh</td>
+                    <td>150 000</td>
+                    <td>06 Tháng 6 2024 9:20</td>
+                </tr>
+                <tr>
+                    <td class="table-actions">
+                        <button class="view" title="Xem"><span style="font-weight:bold;">👁</span></button>
+                        <button class="edit" title="Sửa">✎</button>
+                        <button class="delete" title="Xóa">✖</button>
+                    </td>
+                    <td>1969</td>
+                    <td>Nguyễn Hữu Minh</td>
+                    <td>Mai Thục Anh</td>
+                    <td>354 000</td>
+                    <td>06 Tháng 6 2024 9:24</td>
+                </tr>
+            </tbody>
+        </table>
+        <button class="actions delete">DELETE SELECTED RECORDS</button>
+        <div class="pagination">
+            <span>Trang</span>
+            <button class="active">1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>></button>
+            <button>>></button>
+        </div>
+        <div style="text-align:right; margin-top:10px; color:#666;">
+            Kết quả 1 trong 20 trang
+        </div>
+    </div>
+    <div class="footer">
+        <div class="title">TRƯỜNG ĐẠI HỌC THỦY LỢI</div>
+        <div class="info">
+            Địa chỉ: 175 Tây Sơn, Đống Đa, Hà Nội<br>
+            Điện thoại: (024) 38522201 - Fax: (024) 35633351<br>
+            Email: <a href="mailto:phongctct@tlu.edu.vn">phongctct@tlu.edu.vn</a>
+        </div>
+    </div>
+    <!-- Popup Form -->
+    <div class="modal" id="modalAdd" style="display:none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="modal-title">Thêm giao dịch</span>
+                <span class="modal-close" id="closeModal">&times;</span>
+            </div>
+            <form class="modal-form" id="addForm">
+                <label>Khách hàng</label>
+                <input type="text" id="khachHang" maxlength="30" placeholder="Nhập tên khách hàng">
+                <span class="error" id="errKhachHang"></span>
+                <label>Nhân viên</label>
+                <input type="text" id="nhanVien" maxlength="30" placeholder="Nhập tên nhân viên">
+                <span class="error" id="errNhanVien"></span>
+                <label>Số tiền</label>
+                <input type="text" id="soTien" placeholder="Nhập số tiền">
+                <span class="error" id="errSoTien"></span>
+                <div class="modal-footer">
+                    <button type="button" class="cancel" id="cancelModal">Hủy</button>
+                    <button type="submit" class="add">Thêm</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="bai2.js"></script>
+    <script>
+        // Hiện popup
+        document.getElementById('btnAdd').onclick = function() {
+            document.getElementById('modalAdd').style.display = 'flex';
+        };
+        // Đóng popup
+        document.getElementById('closeModal').onclick = function() {
+            document.getElementById('modalAdd').style.display = 'none';
+        };
+        document.getElementById('cancelModal').onclick = function() {
+            document.getElementById('modalAdd').style.display = 'none';
+        };
+        // Ngăn reload khi submit
+        document.querySelector('.modal-form').onsubmit = function(e) {
+            e.preventDefault();
+            document.getElementById('modalAdd').style.display = 'none';
+        };
+        // Hiển thị dữ liệu mẫu lên bảng khi tải trang
+        function renderTable() {
+            const tbody = document.querySelector("table tbody");
+            tbody.innerHTML = "";
+            giaoDichData.forEach(gd => {
+                const tr = document.createElement("tr");
+                tr.innerHTML = `
+                    <td class="table-actions">
+                        <button class="delete" title="Xóa">✖</button>
+                        <button class="view" title="Xem"><span style="font-weight:bold;">👁</span></button>
+                        <button class="edit" title="Sửa">✎</button>
+                    </td>
+                    <td>${gd.id}</td>
+                    <td>${gd.khachHang}</td>
+                    <td>${gd.nhanVien}</td>
+                    <td>${gd.soTien.toLocaleString()}</td>
+                    <td>${gd.ngayMua}</td>
+                `;
+                tbody.appendChild(tr);
+            });
+        }
+        renderTable();
+    </script>
+</body>
+</html>
